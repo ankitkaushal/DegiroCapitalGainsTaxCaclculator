@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <CodeAnalysisRuleSet>.stylecop/stylecop.ruleset.xml</CodeAnalysisRuleSet>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="Configuration\" />
+        <Folder Include="Exceptions\" />
+    </ItemGroup>
+
+    <ItemGroup>       
+        <AdditionalFiles Include=".stylecop/stylecop.json" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
+    
+</Project>
