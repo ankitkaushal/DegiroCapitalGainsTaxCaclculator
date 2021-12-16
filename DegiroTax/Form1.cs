@@ -12,7 +12,7 @@
     using DegiroTax.Services;
     using DegiroTax.TransactionParser;
 
-    public partial class Form1 : Form
+    public partial class Form1 : System.Windows.Forms.Form
     {
         private string filePath;
 

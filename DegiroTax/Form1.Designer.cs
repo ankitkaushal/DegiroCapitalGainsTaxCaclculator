@@ -29,6 +29,7 @@ namespace DegiroTax
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,7 +75,7 @@ namespace DegiroTax
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(973, 331);
-            this.dataGridView1.TabIndex = 1;            
+            this.dataGridView1.TabIndex = 1;
             // 
             // Stock
             // 
@@ -137,7 +138,7 @@ namespace DegiroTax
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 15);
             this.label1.TabIndex = 3;
-            this.label1.Text = "File path";            
+            this.label1.Text = "File path";
             // 
             // checkBox1
             // 
@@ -166,7 +167,7 @@ namespace DegiroTax
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 15);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Tax Year";            
+            this.label2.Text = "Tax Year";
             // 
             // Form1
             // 
@@ -180,8 +181,9 @@ namespace DegiroTax
             this.Controls.Add(this.selectFile);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";            
+            this.Text = "Capital Gains Tax";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
