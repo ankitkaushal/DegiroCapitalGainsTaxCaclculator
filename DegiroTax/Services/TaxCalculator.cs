@@ -55,7 +55,7 @@
                                 {
                                     var buyTransactionLeft = this.GetTransactionWithChangedQuantity(buyTransactions[isin][i], buyTransactions[isin][i].Quantity - quantityLeft);
                                     var buyTransactionDone = this.GetTransactionWithChangedQuantity(buyTransactions[isin][i], quantityLeft);
-                                    profitAndLossTransactions.Add(new ProfitAndLossTransaction(buyTransactionDone, sellTransaction));
+                                    profitAndLossTransactions.Add(new ProfitAndLossTransaction(buyTransactionDone, this.GetTransactionWithChangedQuantity(sellTransaction, -quantityLeft)));
                                     buyTransactions[isin][i] = buyTransactionLeft;
                                     quantityLeft = 0;
                                 }
