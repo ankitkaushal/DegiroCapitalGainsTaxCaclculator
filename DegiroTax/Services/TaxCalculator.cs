@@ -88,8 +88,9 @@
 
         private Transaction GetTransactionWithChangedQuantity(Transaction originalTransaction, double quantity)
         {
+            var transactionFeePerUnit = originalTransaction.TransactionFee / originalTransaction.Quantity;
             return new Transaction.Builder().Stock(originalTransaction.Stock).Quantity(quantity).
-                        TransactionFee(originalTransaction.TransactionFee).Price(originalTransaction.Price).Id(originalTransaction.Id).DateTime(originalTransaction.DateTime).Build();
+                        TransactionFee(transactionFeePerUnit * quantity).Price(originalTransaction.Price).Id(originalTransaction.Id).DateTime(originalTransaction.DateTime).Build();
         }
     }
 }
