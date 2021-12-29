@@ -41,10 +41,9 @@ namespace DegiroTax.TransactionParser
                     var name = fields[(int)Fields.Product];
                     var isin = fields[(int)Fields.ISIN];
                     var stock = new Stock(name, isin);
-                    var exchange = this.ParseDouble(fields[(int)Fields.Exchange], 1);
                     var quantity = this.ParseDouble(fields[(int)Fields.Quantity], 0);
                     var transactionFee = this.ParseDouble(fields[(int)Fields.TransactionCosts], 0);
-                    var price = this.ParseDouble(fields[(int)Fields.Price], 0) / exchange;
+                    var price = -this.ParseDouble(fields[(int)Fields.Value], 0) / quantity;
                     var id = fields[(int)Fields.OrderID];
                     var date = fields[(int)Fields.Date].Replace("/", "-");
                     var time = fields[(int)Fields.Time];
