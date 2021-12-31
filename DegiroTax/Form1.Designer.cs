@@ -58,6 +58,7 @@ namespace DegiroTax
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,7 +88,7 @@ namespace DegiroTax
             this.Profit,
             this.ActualProfit});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 190);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 161);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(845, 331);
@@ -194,7 +195,7 @@ namespace DegiroTax
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(69, 552);
+            this.label3.Location = new System.Drawing.Point(69, 529);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 16);
             this.label3.TabIndex = 7;
@@ -202,7 +203,7 @@ namespace DegiroTax
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 549);
+            this.textBox2.Location = new System.Drawing.Point(132, 526);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(116, 23);
             this.textBox2.TabIndex = 8;
@@ -210,7 +211,7 @@ namespace DegiroTax
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(275, 554);
+            this.label4.Location = new System.Drawing.Point(275, 531);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(12, 15);
             this.label4.TabIndex = 9;
@@ -218,7 +219,7 @@ namespace DegiroTax
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(304, 549);
+            this.textBox3.Location = new System.Drawing.Point(304, 526);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(116, 23);
             this.textBox3.TabIndex = 10;
@@ -227,7 +228,7 @@ namespace DegiroTax
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(438, 557);
+            this.label5.Location = new System.Drawing.Point(438, 534);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(13, 15);
             this.label5.TabIndex = 11;
@@ -235,7 +236,7 @@ namespace DegiroTax
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(479, 552);
+            this.textBox4.Location = new System.Drawing.Point(479, 529);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(116, 23);
             this.textBox4.TabIndex = 12;
@@ -244,7 +245,7 @@ namespace DegiroTax
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(614, 557);
+            this.label6.Location = new System.Drawing.Point(614, 534);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(17, 15);
             this.label6.TabIndex = 13;
@@ -253,7 +254,7 @@ namespace DegiroTax
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(652, 557);
+            this.label7.Location = new System.Drawing.Point(652, 534);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(15, 15);
             this.label7.TabIndex = 14;
@@ -261,7 +262,7 @@ namespace DegiroTax
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(692, 552);
+            this.textBox5.Location = new System.Drawing.Point(692, 529);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(116, 23);
             this.textBox5.TabIndex = 15;
@@ -270,7 +271,7 @@ namespace DegiroTax
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(304, 590);
+            this.label8.Location = new System.Drawing.Point(304, 567);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(75, 16);
             this.label8.TabIndex = 16;
@@ -280,7 +281,7 @@ namespace DegiroTax
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(482, 589);
+            this.label9.Location = new System.Drawing.Point(482, 566);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(36, 16);
             this.label9.TabIndex = 17;
@@ -290,11 +291,22 @@ namespace DegiroTax
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(134, 589);
+            this.label10.Location = new System.Drawing.Point(134, 566);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(41, 16);
             this.label10.TabIndex = 18;
             this.label10.Text = "Profit";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Arial", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(113, 606);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(564, 13);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "I do not bear any responsibility for the calculated tax, please verify the calcul" +
+    "ations as per the tax laws";
             // 
             // Form1
             // 
@@ -302,6 +314,7 @@ namespace DegiroTax
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1009, 623);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -360,6 +373,7 @@ namespace DegiroTax
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
 
