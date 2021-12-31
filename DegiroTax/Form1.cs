@@ -94,7 +94,7 @@
             var taxableProfit = Math.Max(0.0, profit - exemption);
             var tax = taxableProfit * rate / 100.0;
 
-            this.textBox5.Text = tax.ToString();
+            this.textBox5.Text = tax.RoundOff().ToString();
         }
 
         private void PopulateGrid(List<ProfitAndLossTransaction> profitAndLossTransactions, double profit)
@@ -114,13 +114,15 @@
                 if (pnlTransaction.IsWashSale())
                 {
                     this.dataGridView1[7, count].Value = pnlTransaction.Profit.RoundOff();
-                    this.dataGridView1.Rows[count].DefaultCellStyle.BackColor = Color.LightYellow;
+                    this.dataGridView1.Rows[count].DefaultCellStyle.BackColor = Color.LightBlue;
                 }
 
                 count += 1;
             }
 
             this.dataGridView1[6, count].Value = profit.RoundOff();
+            this.dataGridView1[0, count].Value = "Profit";
+            this.dataGridView1.Rows[count].DefaultCellStyle.BackColor = Color.DeepSkyBlue;
         }
 
         private void Button2_Click(object sender, EventArgs e)

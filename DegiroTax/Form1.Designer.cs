@@ -57,12 +57,14 @@ namespace DegiroTax
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(465, 25);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 48);
@@ -73,6 +75,7 @@ namespace DegiroTax
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Stock,
@@ -83,10 +86,11 @@ namespace DegiroTax
             this.Quantity,
             this.Profit,
             this.ActualProfit});
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(12, 190);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(973, 331);
+            this.dataGridView1.Size = new System.Drawing.Size(845, 331);
             this.dataGridView1.TabIndex = 1;
             // 
             // Stock
@@ -131,7 +135,8 @@ namespace DegiroTax
             // 
             // selectFile
             // 
-            this.selectFile.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.selectFile.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.selectFile.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.selectFile.Location = new System.Drawing.Point(83, 25);
             this.selectFile.Name = "selectFile";
             this.selectFile.Size = new System.Drawing.Size(135, 48);
@@ -147,9 +152,10 @@ namespace DegiroTax
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(87, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 15);
+            this.label1.Size = new System.Drawing.Size(63, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "File path";
             // 
@@ -158,9 +164,10 @@ namespace DegiroTax
             this.checkBox1.AutoSize = true;
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Indeterminate;
+            this.checkBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.checkBox1.Location = new System.Drawing.Point(692, 25);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 19);
+            this.checkBox1.Size = new System.Drawing.Size(94, 20);
             this.checkBox1.TabIndex = 4;
             this.checkBox1.Text = "Wash Sale";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -176,18 +183,20 @@ namespace DegiroTax
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(318, 68);
+            this.label2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(321, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 15);
+            this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "Tax Year";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(69, 552);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.Size = new System.Drawing.Size(46, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "Tax = ";
             // 
@@ -260,20 +269,32 @@ namespace DegiroTax
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(304, 590);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 15);
+            this.label8.Size = new System.Drawing.Size(75, 16);
             this.label8.TabIndex = 16;
             this.label8.Text = "Exemption";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(482, 589);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 15);
+            this.label9.Size = new System.Drawing.Size(36, 16);
             this.label9.TabIndex = 17;
             this.label9.Text = "Rate";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(134, 589);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 16);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Profit";
             // 
             // Form1
             // 
@@ -281,6 +302,7 @@ namespace DegiroTax
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1009, 623);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox5);
@@ -337,6 +359,7 @@ namespace DegiroTax
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
 
