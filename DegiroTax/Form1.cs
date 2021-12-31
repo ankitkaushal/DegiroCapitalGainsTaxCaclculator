@@ -41,8 +41,9 @@
 
             bool washSaleRule = this.checkBox1.Checked;
 
-            // Clear Grid
+            // Clear Grid and tax outptut
             this.dataGridView1.Rows.Clear();
+            this.textBox5.Text = string.Empty;
 
             // Parse Transaction
             ITransactionParser parser = new CSVTransactionParser(this.filePath);
@@ -70,6 +71,30 @@
             double profit = calculator.CalculateTax(profitAndLossTransactions);
 
             this.PopulateGrid(profitAndLossTransactions, profit);
+            this.PopulateTaxTextboxes(profit);
+        }
+
+        private void PopulateTaxTextboxes(double profit)
+        {
+            double exemption;
+            if (!double.TryParse(this.textBox3.Text, out exemption))
+            {
+                MessageBox.Show("Exemption limit must be a valid number");
+                return;
+            }
+
+            double rate;
+            if (!double.TryParse(this.textBox4.Text, out rate))
+            {
+                MessageBox.Show("Rate must be a valid number");
+                return;
+            }
+
+            this.textBox2.Text = profit.RoundOff().ToString();
+            var taxableProfit = Math.Max(0.0, profit - exemption);
+            var tax = taxableProfit * rate / 100.0;
+
+            this.textBox5.Text = tax.ToString();
         }
 
         private void PopulateGrid(List<ProfitAndLossTransaction> profitAndLossTransactions, double profit)
