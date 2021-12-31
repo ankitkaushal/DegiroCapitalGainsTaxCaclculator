@@ -10,7 +10,7 @@ namespace DegiroTax.Classes
         {
             this.BuyTransaction = buyTransaction;
             this.SellTransaction = sellTransaction;
-            this.Profit = (-sellTransaction.Quantity * sellTransaction.Price) - sellTransaction.TransactionFee - (buyTransaction.Quantity * buyTransaction.Price) - buyTransaction.TransactionFee;
+            this.Profit = (-sellTransaction.Quantity * sellTransaction.Price) + sellTransaction.TransactionFee - (buyTransaction.Quantity * buyTransaction.Price) + buyTransaction.TransactionFee;
         }
 
         public Transaction BuyTransaction { get; }
